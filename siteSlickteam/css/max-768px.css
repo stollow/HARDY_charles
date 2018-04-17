@@ -1,0 +1,212 @@
+
+
+/* css entré de page */
+
+.bandeauCookie{
+	height:100px;
+	font-size:0.8em;
+}
+
+.conteneurEnter{
+	padding-top:10%;
+}
+
+.logo3D{
+	width:40%;
+	margin-left:32%;
+	max-height:50%;
+}
+
+.pageTitre{
+	padding-top:0;
+}
+
+.logoTitre{
+	width:35%;
+	margin-left:32%;
+}
+
+.paddingEnter{
+	padding-top:50px;
+}
+
+.paddingEnter2{
+	padding-top:50px;
+}
+
+.ajustement{
+	padding-left:25%;
+	padding-right:25%;
+}
+
+.techno{
+	font-size:1em;
+}
+
+.people{
+	font-size:1em;
+}
+
+.arrow{
+	bottom:10px;
+	left:47%;
+}
+
+
+/* ------------------------------------------------------------------- */
+
+
+/* css carroussel */
+
+
+.img1{
+	height:200px;
+}
+
+.img2{
+	height:200px;
+}
+
+.img3{
+	height:200px;
+}
+
+#carrousel{
+	height:200px!important;
+}
+
+.titreImg{
+	font-size:1.5em!important;
+	padding-bottom:0!important;
+	padding-top:15%;
+}
+
+.controlerCarrousel{
+	right:20px;
+	bottom:5px;
+	width:65%;
+}
+
+.dot{
+	margin-left:5px;
+}
+
+/*  css activité */
+
+.iconCenter{
+	top:15%;
+	font-size:0.6em;
+}
+
+.iconSolution{
+	width:100px;
+}
+
+/* ------------------------------------------------------------------ */
+
+
+/* css annonces */
+
+.annonces{
+	width:100%;
+	height:32%;
+	font-size:1em;
+	margin-left:0;
+}
+
+.annoncesRow{
+	width:100%;
+	height:900px;
+}
+
+.card-text{
+	height:70%;
+	width:100%;
+}
+
+
+#bloc1{
+	top:0;
+	left:0;
+}
+	
+#bloc2{
+	top:33%;
+	left:0;
+}
+
+#bloc3{
+	top:66%;
+	left:0;
+}
+
+.contenuAnnonce{
+	position:absolute;
+	top:300px;
+	left:0px;
+	width:100%;
+	font-family: 'Roboto', sans-serif;
+	font-size:0.6em;
+	height:220%;
+}
+
+.relative{
+	max-width:100%!important;
+	margin-left:0;
+	margin-bottom:20px;
+}
+
+
+.contenuAnnonce>div>p,.contenuAnnonce>div>p>span,.contenuAnnonce>div>div>p{
+	font-size:10px!important;;
+}
+
+/* ------------------------------------------------------------------------ */
+
+
+/*  CSS de la section recrutement  */
+.ConteneurContent{
+height:1000px;
+}
+
+.annonces{
+	height:32%;
+}
+
+
+/* css chiffres */
+
+.iconSolutionChiffre>div:nth-child(1){
+ margin:auto;
+}
+
+.iconResponsiveChiffre{
+	height:250px;
+	margin:0;
+	padding:0;
+}
+/* ------------------------------------------------------------------------ */
+
+
+/* css contact */
+
+.Contact>p{
+	width:49%;
+	font-size:0.8em;
+}
+
+.formContact{
+	width:100%;
+	height:100%;
+	margin-right:0;
+	margin-left:0;
+	margin-top:0;
+	background-color:white;
+	padding-top:50px;
+}
+
+/* --------------------------------------------------------------------------------*/
+
+.bg{
+	background-color:#f5f5f5!important;
+}

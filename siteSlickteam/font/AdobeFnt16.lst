@@ -1,0 +1,27 @@
+%!Adobe-FontList 1.16
+%Locale:0x40c
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Type1
+FontName:GothamRounded-BookItalic
+FamilyName:Gotham Rounded
+StyleName:Book Italic
+FullName:Gotham Rounded Book Italic
+MenuName:Gotham Rounded Book
+StyleBits:1
+WritingScript:Roman
+OutlineFileName:C:\wamp64\www\siteSlickteam\Font\Gotham Rounded Book Italic.otf
+DataFormat:sfntData
+UsesStandardEncoding:yes
+isCFF:yes
+FileLength:141444
+FileModTime:1419672448
+WeightClass:325
+WidthClass:5
+AngleClass:1
+NameArray:0,Mac,4,Gotham Rounded Book Italic
+NameArray:0,Win,1,Gotham Rounded Book
+NameArray:0,Win,16,Gotham Rounded
+%EndFont
+

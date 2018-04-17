@@ -1,0 +1,1 @@
+a:1:{i:0;a:5:{s:10:"titreCarte";s:4:"test";s:4:"lien";s:4:"test";s:12:"titreAnnonce";s:0:"";s:6:"profil";s:59:"<p>Description du profil recherch&eacute; pour le poste</p>";s:5:"poste";s:27:"<p>Description du poste</p>";}}

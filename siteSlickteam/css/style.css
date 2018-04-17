@@ -1,0 +1,1157 @@
+/*Propriété CSS Generale  */
+
+
+.container-fluid{
+overflow:hidden;
+}
+
+.container-fluid:nth-child(1),.container-fluid:nth-child(3),.container-fluid:nth-child(5),.container-fluid:nth-child(7),.container-fluid:nth-child(9){
+border-right:4px dashed #f18700;
+border-top-right-radius:50px 50px;
+border-bottom-right-radius:50px 50px;
+}
+
+.container-fluid:nth-child(2),.container-fluid:nth-child(4),.container-fluid:nth-child(6),.container-fluid:nth-child(8){
+border-left:4px dashed #f18700;
+border-top-left-radius:50px 50px;
+border-bottom-left-radius:50px 50px;
+}
+
+.goutte,.enter-content,.goutteChiffre{
+	border-top:none;
+	border-right:none!important;
+	border-top-right-radius:0px!important;
+	overflow:visible!important;
+}
+
+.tiny>div, .tiny>div>div>div,.mce-panel>div,.mce-panel,.mce-btn>div,.mce-txt{
+	background-color:black!important;
+}
+
+
+
+p,blockquote{
+	font-family: 'Roboto Condensed', sans-serif;
+}
+
+
+a{
+	color:black!important;
+}
+
+a:hover{
+	text-decoration:none;
+}
+
+
+li{
+	background-color:transparent!important;
+}
+
+
+
+
+/* CSS des bouttons !!!!!*/
+
+
+.fakeButton {
+    position: relative;
+    color: #ea6607;
+    font-size:1em;
+    text-decoration: none;
+    margin-top:2%;
+    margin-bottom:2%;
+}
+
+.fakeButton2 {
+    padding-left:40%;
+    padding-right:40%;
+    margin-top:2%;
+    margin-bottom:2%;
+}
+
+.fakeButton:hover{
+	cursor:pointer;
+}
+
+.fakeButton::after {
+    content: '';
+    display:block;
+    position:absolute;
+    top:0;
+    left:25%;
+    width: 0;
+    height: 2px;
+    background: #f18700;
+    transition: width .5s;
+}
+
+.fakeButton2::after {
+    left:45%!important;
+}
+
+.fakeButton:hover::after {
+    width: 50%;
+}
+
+.fakeButton2:hover::after {
+    width: 10%!important;
+}
+
+
+.fakeButton::before {
+	bottom:0;
+  content: '';
+  display: block;
+  border-bottom: 2px solid #f18700;
+  width: 0;
+  position: absolute;
+  right: 25%;
+  transition: 0.5s ease;
+}
+
+.fakeButton2::before {
+  right: 45%;
+}
+
+.fakeButton:hover::before {
+    width: 50%;
+}
+
+.fakeButton2:hover::before {
+    width: 10%!important;
+}
+
+.bandeauCookie{
+	color:white;
+	background-color:#f18700;
+	width:100%;
+	height:75px;
+	position:fixed;
+	bottom:0;
+	left:0;
+	z-index:999;
+	text-align:center;
+	padding-top:10px;
+}
+
+.cross{
+	position:absolute;
+	top:5px;
+	right:10px;
+	color:black!important;
+}
+
+.cross:hover{
+	cursor:pointer;
+}
+
+/* --------------------------------------------------------------------------------------------------------- */
+
+/* CSS modifiant les propriété de la page d'accueil */
+
+
+/*  -----------------------------------------------------------------------------------------------------------------  */
+
+/* CSS du carrousel / menu */
+
+
+.hamburger {
+  content: ' ';
+  position: relative;
+  width: 20px;
+  border-radius: 5px;
+  transition: all 0.333333333333333s ease;
+}
+
+.fa-bars{
+position:fixed;
+top:15px;
+left:20px;
+z-index:9999;
+color:#f18700;
+}
+
+.hamburger:after,
+.hamburger:before {
+  content: ' ';
+  position: absolute;
+  left: 50%;
+  width: 100%;
+  border-radius: 5px;
+  transform: translateX(-50%);
+  transition-property: top, bottom, transform;
+  transition-duration: 1s, 1s, 0.25s;
+}
+.hamburger:after {
+  top: -8px;
+}
+.hamburger:before {
+  bottom: -8px;
+}
+.menu {
+  pointer-events: none;
+}
+.menu--circle {
+  position: fixed;
+  z-index: 13;
+  width: 350px;
+  height: 350px;
+  overflow: hidden
+}
+.menu__active {
+  position: relative;
+}
+.menu__toggle {
+  z-index: 11;
+  position: absolute;
+  top: -100px;
+  left: -100px;
+  width: 180px;
+  height: 180px;
+  background-color: transparent;
+  border-radius: 50%;
+  transition: transform 0.2s;
+  cursor: pointer;
+  pointer-events: auto;
+}
+.menu__listings {
+  z-index: 10;
+  position: absolute;
+  top: -220px;
+  left: -201px;
+  width: 375px;
+  height: 375px;
+  border-radius: 50%;
+  transform: scale(0.1) rotate(0deg);
+  transition: transform 0.2s;
+}
+.menu__arrow {
+  visibility: hidden;
+  position: absolute;
+}
+.menu__arrow input[type="radio"] {
+  position: fixed;
+  top: -99999px;
+  left: -99999px;
+}
+.menu__arrow ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.menu__arrow--top {
+  top: 0.5em;
+  left: 220px;
+}
+.menu__arrow--top .arrow {
+  transform: rotate(-45deg);
+}
+.menu__arrow--left {
+  top: 220px;
+  left: 0.5em;
+}
+.menu__arrow--left .arrow {
+  transform: rotate(-135deg);
+}
+
+.circle {
+  position: relative;
+  padding: 0;
+  margin: 0;
+  height: 95%;
+  width: 95%;
+  background-color:white;
+  opacity:0.8;
+  border-radius: 50%;
+  transform: rotate(-10deg);
+  overflow: hidden;
+  list-style: none;
+}
+.circle li {
+  position: absolute;
+  top: 50;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  transform-origin: 0 100%;
+}
+.circle li .place {
+  position: absolute;
+  left:50px;
+  top:50px;
+  padding-top: 1.5em;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  font-size:0.8em;
+}
+
+.circle li .place a {
+  text-decoration: none;
+  pointer-events: auto;
+}
+.circle li .place button {
+  pointer-events: auto;
+}
+.circle li:nth-child(1) {
+  left:80px;
+  top:135px;
+  background-color: #fff;
+}
+.circle li:nth-child(2) {
+  left:60px;
+  top:165px;
+  background-color: #fff;
+}
+.circle li:nth-child(3) {
+  left:55px;
+  top:195px;
+  background-color: #fff;
+}
+.circle li:nth-child(4) {
+  left:25px;
+  top:225px;
+  background-color: #fff;
+}
+.circle li:nth-child(5) {
+  left:-5px;
+  top:255px;
+  background-color: #fff;
+}
+
+#menu__active {
+  position: fixed;
+  top: -99999px;
+  left: -99999px;
+}
+#menu__active:checked ~ label .menu__listings {
+  transform: rotate(10deg) scale(1);
+  transition: transform 0.2s;
+}
+#menu__active:checked ~ label .menu__toggle {
+  background-color:transparent;
+  transition: all 0.2s;
+}
+#menu__active:checked ~ label .hamburger {
+  border-color: transparent;
+  transition: border-color 0.333333333333333s;
+}
+#menu__active:checked ~ label .hamburger:after {
+  top: -2px;
+  border-color: #fff;
+  transform: translateX(-50%) rotate(45deg);
+  transition-property: top, transform;
+  transition-duration: 0.2s, 0.2s;
+}
+#menu__active:checked ~ label .hamburger:before {
+  bottom: -2px;
+  border-color: #fff;
+  transform: translateX(-50%) rotate(-45deg);
+  transition-property: bottom, transform;
+  transition-duration: 0.2s, 0.2s;
+}
+#menu__active:checked ~ label .button:hover {
+  color: #c1264e;
+}
+
+
+
+/* -----------------------------------------------------------------------------------------------------  */
+
+
+
+/* CSS CARROUSEL*/
+
+.titreImg{
+	text-align:center;
+	z-index:3;
+	padding-top:250px;
+	color:white!important;
+}
+
+
+.img1{
+	background-image:url("../images/car1.webp");
+	background-size:cover;
+	background-repeat:no-repeat;
+	background-position:50% 50%;
+	width:100%;
+	height:500px;
+	z-index:-1;
+	position:absolute;
+	top:0;
+	left:0;
+	filter: brightness(40%);
+}
+
+.img2{
+	background-image:url("../images/car2.webp");
+	background-size:cover;
+	background-position:center;
+	background-repeat:no-repeat;
+	width:100%;
+	height:500px;
+	z-index:-1;
+	position:absolute;
+	top:0;
+	left:0;
+	filter: brightness(40%);
+}
+
+.img3{
+	background-image:url("../images/car3.webp");
+	background-size:cover;
+	background-position:50% 30%;
+	background-repeat:no-repeat;
+	width:100%;
+	height:500px;
+	z-index:-1;
+	position:absolute;
+	top:0;
+	left:0;
+	filter: brightness(40%);
+}
+
+
+
+#carrousel{
+	transition:all 1s;
+	overflow:hidden;
+	height:500px;
+	position:relative;
+}
+
+.controlerCarrousel{
+	position:absolute;
+	bottom:10px;
+	right:50px;
+	width:60%;
+	text-align:right;
+}
+
+.dot{
+	height:5px;
+	background-color:transparent;
+	border:1px solid white;
+	margin-left:10px;
+	width:10px;
+	height:10px;
+	display:inline-block;
+	border-radius:250px;
+}
+
+
+#first{
+	background-color:#f18700;
+	border:none;
+}
+
+.dot:hover{
+	height:11px;
+	width:11px;
+	background-color:#CB0E11;
+	cursor:pointer;
+}
+
+
+
+/* -----------------------------------------------------------------------------------------------------     */ 
+
+/*  CSS section ACTIVITES */
+
+
+.gras{
+	font-weight:bold;
+}
+
+.goutte{
+	z-index:-1;
+	position:relative;
+	width:100%;
+}
+
+.iconSolution{
+	width:100px;
+	height:100px;
+	margin:auto;
+}
+
+.iconCenter{
+	position:absolute;
+	z-index:1;
+	top:15%;
+	left:0;
+	width:100%;
+	text-align:center;
+	color:white;
+	font-size:0.6em;
+	padding-top:10px;
+}
+
+
+/* -----------------------------------------------------------------------------------------------------  */
+
+
+/*  CSS DE LA SECTION A RETRAVAILLER */
+
+
+.iconPourquoi{
+ 	color:#f18700;
+}
+
+.imgFond{
+	background-image:url("../images/fondWork.jpeg");
+	background-size:cover;
+	background-repeat:no-repeat;
+	min-height:0!important;
+
+}
+
+
+
+/* -----------------------------------------------------------------------------------------------  */
+
+
+
+/*  CSS de la section recrutement  */
+.ConteneurContent{
+height:500px;
+}
+
+a>.fakeButton{
+	color:#f18700!important;
+	text-align:center;
+	width:100%;
+}
+
+.annonces{
+	position:absolute;
+	transition:all 1s;
+	width:30%;
+	will-change:left;
+	padding:2%;
+	padding-top:0;
+	padding-bottom:0;
+	border:none;
+	perspective:800px;
+	z-index:0;
+	border:1px solid #CB4B18;
+	margin-left:2%;
+	margin-top:2%;
+	height:350px;
+	border-top-left-radius:50px 50px;
+	border-bottom-right-radius:50px 50px;
+}
+
+.card-body{
+	display:flex;
+	align-items:center;
+}
+
+.card-title{
+	font-size:1.2em;
+	color:black;
+	text-align:center;
+	width:100%;
+}
+
+.card-title>hr:nth-child(1){
+	height:1px;
+	background-color:black;
+	margin-right:30px;
+	margin-left:-15px;
+}
+
+.card-title>hr:nth-child(2){
+	height:1px;
+	background-color:black;
+	margin-left:30px;
+	margin-right:-15px;
+}
+
+#bloc1{
+	left:0;
+}
+
+#bloc2{
+	left:33%;
+}
+
+#bloc3{
+	left:66%;
+}
+
+
+.annoncesRow{
+	position:relative;
+	height:500px;
+}
+
+
+.back{
+	position:absolute;
+	top:10px;
+	right:20px;
+}
+
+
+.annonceContent{
+	height:100%;
+	padding-bottom:50px;
+	border-radius:20px;
+	position:relative;
+	overflow: visible;
+}
+
+.contenuAnnonce{
+	position:absolute;
+	text-align:justify;
+	top:-1px;
+	height:350px;
+	left:107%;
+	width:250%;
+	padding:20px;
+	padding-bottom:0;
+	font-size:0.9em;
+	background-color:black;
+	color:white;
+	overflow:hidden;
+}
+
+.contenuAnnonce>h2{
+	font-size:1.8em;
+}
+
+.bouttonEvent{
+	position:absolute;
+	bottom:5px;
+	width:100%;
+	text-align:center;
+	left:0;
+}
+
+.contenuAnnonce>div>p,.contenuAnnonce>div>p>span,.contenuAnnonce>div>div>p{
+	font-size:11px!important;;
+	color:white!important;
+	margin-bottom:0px!important;
+}
+.fakeButton>p{
+	text-align:center;
+}
+
+.fakeButton>p>a{
+	color:#f18700!important;
+	font-size:14px;
+	margin-top:20px;
+}
+
+/* ------------------------------------------------------------------------------------------------------------*/
+
+
+/* Utiliser sur la partie évènement et annonces !!  */
+
+.grey{
+	background-color:#f5f5f5;
+}
+
+/* CSS de la partie évènement */
+
+
+blockquote{
+	font-size:0.9em;
+	border-left:1px dashed black;
+	margin-left:5px;
+	padding-left:10px;
+	margin-bottom:5px;
+	text-align:left;
+}
+
+blockquote>a{
+	color:#f18700!important;
+	margin:10px;
+}
+
+blockquote>a:hover{
+	color:#cb0e11!important;
+	cursor:pointer;
+}
+
+
+.bandeau{
+	opacity:.8;
+	background-color:black;
+	position:absolute;
+	top:20px;
+	width:50%;
+	height:40px;
+	right:0px;
+	z-index:1;
+	border-radius:10px;
+	clip-path: polygon(25% 0%, 100% 1%, 100% 100%, 25% 100%, 30% 50%);
+}
+
+.bandeau>h3{
+	color:white;
+	text-align:center;
+	margin-bottom:5%;
+	margin-left:20px;
+	font-size:1.2em;
+	margin-top:8px;
+}
+
+.relative{
+	margin-bottom:5%;
+	margin-left:1%;
+	padding:5px;
+	border:1px solid #f18700;
+	max-width:32%!important;
+	border-top-right-radius:50px 50px;
+	border-bottom-left-radius:50px 50px;
+}
+
+.relative>h3{
+	color:black;
+	text-align:center;
+	margin-bottom:15px;
+	font-size:1.2em;
+	margin-top:15px;
+	height:50px;
+}
+
+.relative>p{
+	text-align:left!important;
+	font-size:0.9em!important;
+	height:75px;
+	margin-bottom:0;
+}
+
+.lieuEvent{
+	color:black;
+	margin:10px;
+	margin-top:2px;
+	margin-bottom:2px;
+	width:30px;
+	text-align:center;
+}
+
+.animBandeau{
+	position:relative;
+    margin:auto;
+    height:150px;
+}
+
+.animBandeau > img {
+	max-width:100%;
+	max-height:150px;
+}
+
+.present{
+	width:100%;
+	text-align:left;
+	position:relative;
+	height:50px;
+}
+
+.avatar{
+	position:absolute;
+	left:5px;
+	top:10px;
+	border:2px solid black;
+	border-radius:200px;
+	width:50px;
+	height:50px;
+	text-align:center;
+	overflow:hidden;
+}
+
+.avatar>img{
+	width:50px;
+}
+
+
+/*  -------------------------------------------------------------------------------------------------------------   */
+
+
+/*  CSS de la partie Chiffres Slickteam */
+
+.sectionChiffre{
+	position:relative;
+	height:auto;
+	padding:0;
+}
+
+.chiffreImg{
+	position:absolute;
+	left:0;
+	top:0;
+	width:100%;
+	height:100%;
+	z-index:-1;
+	background-image:url("../images/cafe.webp");
+	background-size:cover;
+	filter:brightness(50%);
+}
+
+.titreChiffre{
+	margin-top:2%;
+}
+
+.contenerChiffre{
+	height:auto;
+	margin-bottom:10%;
+}
+
+.iconCenter2{
+	position:absolute;
+	z-index:1;
+	top:22%;
+	left:0;
+	width:100%;
+	text-align:center;
+	color:white;
+	text-align:center;
+}
+
+.iconCenter3{
+	position:absolute;
+	z-index:1;
+	top:18%;
+	left:0;
+	width:100%;
+	text-align:center;
+	color:white;
+	text-align:center;
+}
+
+.iconResponsiveChiffre{
+	height:auto;
+}
+
+.iconCenter2>img{
+	width:35px;
+}
+
+.iconSolutionChiffre{
+	padding-top:20px;
+	margin:0!important;
+	width:100%;
+	height:auto;
+}
+
+
+.iconSolutionCenter{
+	width:100px;
+	height:100px;
+	margin:auto;
+	overflow:visible;
+}
+
+.iconSolutionChiffre>div:nth-child(1){
+ margin:auto;
+ max-width:70px;
+}
+
+.odometer-container{
+	display:flex;
+	justify-content:center;
+	text-align:center;
+	width:100%;
+}
+
+.odometer{
+	font-size:3em;
+	width:100%;
+}
+
+
+.iconSolutionCenter>.iconCenter2{
+	top:20%;
+}
+
+.textChiffre{
+	color:white;
+}
+
+/*   ------------------------------------------------------------------------------------------------------------------  */
+
+/* CSS de la partie Contact ( sans le formulaire ) */
+
+
+.Contact{
+	color:white;
+	background-color:rgba(0,0,0,0.5);
+	display:inline-block;
+	width:100%;
+}
+
+.Contact>p{
+	display:inline-block;
+	width:33%;
+	margin-top:1rem;
+}
+
+#contact{
+	color:#F18700!important;
+	position:absolute;
+	width:100%;
+	text-align:center;
+	left:0;
+	top:0;
+	z-index:1;
+	margin-bottom:0!important;
+}
+
+.imgFondContact{
+	position:relative;
+	height:300px;
+}
+
+
+.googleMap{
+  height: 100%; 
+  width: 100%; 
+  position:absolute; 
+  top: 0; 
+  left: 0; 
+  z-index: 0;
+}
+
+.gm-style>div:nth-child(1)>div:nth-child(3)>div:nth-child(2)>div:nth-child(4)>div:nth-child(1)>div:nth-child(3)>div{
+	text-align:center;
+	padding-top:5px;
+}
+
+
+#mail{
+	color:white!important;
+}
+
+#mail:hover{
+	text-decoration:underline;
+}
+
+
+
+/* ----------------------------------------------------------------------------------------------------------------------- */
+
+
+/* Footer (à l'exception du formualaire) */
+footer{
+	position:relative;
+	z-index:10;
+	background-color:black;
+	padding:2%;
+	color:white;
+}
+
+
+.chart {
+  position: relative;
+  display: inline-block;
+  width: 60px!important;
+  height: 60px!important;
+  text-align: center;
+}
+.chart canvas {
+  position: absolute;
+  top: 0!important;
+  left: 0!important;
+  height:60px!important;
+}
+
+.percent{
+	display:none;
+}
+
+.text {
+  display: inline-block;
+  line-height: 60px;
+  color:white!important;
+
+}
+
+
+/* icon reseaux sociaux */
+.reseaux{
+	margin-left:25%;
+}
+
+.footerIcon{
+	font-size:1.6em;
+	width:50px!important;
+	height:50px!important;
+	display:inline-block;
+}
+
+.footerIcon>a{
+	color:white!important;
+}
+
+.divIcon{
+	margin-bottom:2%;
+}
+/* ---------------- */
+
+
+
+#mentions{
+	color:white!important;
+}
+
+#mentions:hover{
+	text-decoration:underline;
+}
+
+
+/* Boutton pour le formulaire */
+
+
+.contactSVG{
+	height:60px;
+	margin-bottom:30px;
+	margin-top:15px;
+}
+
+.chart>.text{
+	font-size:0.8em;
+}
+
+
+/*---------------------------*/
+
+/*  -------------------------------------------------------------------------------------------------------------------------------- */
+
+
+
+/*  CSS du formulaire de contact  */
+
+#name-error,#firstName-error,#tel-error,#email-error,#obj-error,#messages-error{
+	color:red!important;
+	text-align:left!important;
+	margin-bottom:5px!important;
+	width:100%;
+	line-height:1.2em;
+	font-size:0.8em;
+	margin:0;
+	height:15px;
+}
+
+.input-text{
+	display: block;
+    position: relative;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    font-size: 1rem;
+    height:65px;
+}
+
+.btn {
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0px;
+  font-family: Courier New;
+  color: #ffffff;
+  width:80px;
+  height:40px;
+  font-size: 14px;
+  padding:0;
+  background: #f18700;
+  text-decoration: none;
+  margin:auto;
+}
+
+.btnCenter{
+    margin-top:20px;
+	width:100%;
+	display:flex;
+	justify-content:center;
+}
+
+.notice{
+	margin-top:20px;
+	font-size:0.8em;
+}
+
+.divIcon{
+	margin-top:20px;
+}
+
+.modal-contact{
+	position:fixed;
+	background-color:rgba(50,50,50,0.90);
+	width:100%;
+	height:100%;
+	top:0;
+	left:0;
+	z-index:99999999999999999999999999999999999999999999999999999999999999;
+}
+
+.formContact{
+	position:relative;
+	width:80%;
+	height:80%;
+	margin-top:5%;
+	margin-left:10%;
+	background-color:white;
+	padding-top:50px;
+}
+
+.backContact{
+	position:absolute;
+	top:5px;
+	right:10px;
+}
+
+label{
+	margin-bottom:0;
+}
+
+.input{
+	display: block;
+    width: 100%;
+    height: 2em;
+    border: 0;
+    border-bottom: solid 1px black;
+    font-size: 0.9em;
+    line-height: 1.2;
+    resize: vertical;
+}
+
+.input-area{
+	height:4em!important;
+}
+
+
+.contentLabel{
+	margin:10px;
+}
+
+span{
+	color:white!important;
+}
+
+.description{
+	color:black!important;
+}
+
+
+.modal-contact{
+	display:none;
+}
+
+.description{
+	display:none;
+}
+
+.placeholder{
+	color:black!important;
+}
+
+.footerText{
+	font-size:0.8em;
+}
+
+
+
+

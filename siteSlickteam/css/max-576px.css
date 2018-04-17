@@ -1,0 +1,33 @@
+.conteneurEnter{
+	padding-top:10%;
+}
+
+.logo3D{
+	margin-left:31%;
+}
+
+.text2_3D{
+	font-size:5vw;
+}
+
+
+#carrousel{
+	height:200px!important;
+}
+
+.titreImg{
+	font-size:0.6em;
+	padding-top:100px;
+}
+
+.titreSlick{
+	padding-top:75px!important;
+}
+
+.iconResponsive{
+	width:50%!important;
+}
+
+.footerIcon{
+	font-size:1.5em
+}

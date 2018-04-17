@@ -1,0 +1,1 @@
+a:1:{i:0;a:7:{s:3:"img";s:0:"";s:4:"lien";s:4:"test";s:4:"type";s:0:"";s:4:"date";s:0:"";s:4:"lieu";s:0:"";s:10:"titreEvent";s:69:"<h3>Ici un titre Header3 (le titre de l'&eacute;v&egrave;nement)</h3>";s:5:"event";s:119:"<p>Puis le paragraphe (la description de l'&eacute;v&egrave;nement)(Merci d'effacer ceci lors de l'&eacute;criture)</p>";}}

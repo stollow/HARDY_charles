@@ -1,0 +1,61 @@
+
+/* MENU CENTRAL */
+
+.conteneurEnter{
+	padding-top:0;
+}
+.logo3D{
+	width:20%!important;
+	margin-left:40%!important;
+}
+
+.logoTitre{
+	width:20%!important;
+	margin-left:40%!important;
+}
+
+.relative{
+	margin:0;
+}
+
+.paddingEnter2{
+	padding-top:10px;
+}
+
+.ajustement{
+	padding-left:10%;
+	padding-right:10%;
+}
+
+
+/* ----------------------------------------------------------------------------- */
+
+
+
+/* CARROUSSEL */
+
+.titreImg{
+	padding-top:15%;
+}
+
+/* ------------------------------------------------------------------------------ */
+
+
+/*  css annonces */
+
+
+
+
+
+.annonces{
+	height:30%;
+}
+
+
+
+.annonceContent{
+	height:100%;
+}
+
+
+/* ------------------------------------------------------------------------------------------- */
